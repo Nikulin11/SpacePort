@@ -1,0 +1,58 @@
+.inputBlock {
+    position: relative;
+}
+
+.input {
+    width: 496px;
+    padding: 8.5px 40px 8.5px 17px;
+    border: 1px solid var(--grayDF);
+    border-radius: 5px;
+    outline: none;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.input::placeholder {
+    color: var(--gray93);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.input:hover, .input:focus {
+    border-color: var(--orange);
+    transition: 0.3s;
+}
+
+.searchIcon {
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    right: 12px;
+}
+
+.searchIcon:hover path {
+    stroke: var(--orange);
+    transition: 0.3s;
+}
+
+@media all and (max-width: 1149px) {
+    .input {
+        width: 280px;
+    }
+}
+
+@media all and (max-width: 759px) {
+    .inputBlock {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .input {
+        width: 100%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .searchIcon {
+        top: 13px;
+    }
+}

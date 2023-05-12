@@ -1,0 +1,21 @@
+.phoneNumber {
+    display: flex;
+    align-items: center;
+}
+
+.phoneNumber > span {
+    margin-left: 3px;
+    font-weight: 400;
+}
+
+.phoneNumber:hover path, .phoneNumber:hover > span {
+    transition: 0.3s;
+    color: var(--orange);
+    stroke: var(--orange);
+}
+
+@media all and (max-width: 959px) {
+    .phoneNumber {
+        display: none;
+    }
+}

@@ -1,0 +1,46 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.footer {
+    border-top: 1px solid #bfbcbc25;
+    padding: 30px 0 40px 0;
+}
+
+.created {
+    text-align: center;
+}
+
+.company {
+    text-decoration: underline;
+}
+
+.created > a:hover {
+    transition: 0.3s;
+    color: var(--orange);
+}
+
+.menuItemsList {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuItem {
+    cursor: pointer;
+    padding: 0 17px 20px;
+}
+
+.menuItem:hover span {
+    color: var(--orange);
+    transition: 0.3s;
+}
+
+@media all and (max-width: 959px) {
+    .menuItemsList {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

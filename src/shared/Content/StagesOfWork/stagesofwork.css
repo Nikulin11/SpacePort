@@ -1,0 +1,69 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.stagesSection {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.stagesSection h2 {
+    margin-bottom: 40px;
+}
+
+.stages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stage {
+    position: relative;
+    width: 30%;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.horizontalLine {
+    position: absolute;
+    display: block;
+    width: 200px;
+    border-top: 2px dashed var(--orange);
+    top: 28px;
+    left: 270px;
+}
+
+@media all and (max-width: 1199px) {
+    .horizontalLine {
+        display: none;
+    }
+}
+
+@media all and (max-width: 759px) {
+    .stages {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stage {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .stage svg {
+        margin-bottom: 20px;
+    }
+    .horizontalLine {
+        width: 88px;
+        border-top: 2px dashed var(--orange);
+        transform: rotate(90deg);
+        left: 50%;
+        right: 50%;
+        top: 200px;
+    }
+    .stagesSection {
+        padding-bottom: 0;
+    }
+}

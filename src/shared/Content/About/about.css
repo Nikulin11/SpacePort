@@ -1,0 +1,41 @@
+.aboutSection {
+    background-color: var(--grayF8);
+    margin-bottom: 110px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    position: relative;
+}
+
+.about {
+    padding: 45px 0;
+    max-width: 65%;
+}
+
+.about p:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.phoneImg {
+    position: absolute;
+    right: 80px;
+    top: -35px;
+}
+
+@media all and (max-width: 959px) {
+    .phoneImg {
+        display: none;
+    }
+    .about {
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 759px) {
+    .aboutSection {
+        margin-bottom: 50px;
+    }
+}

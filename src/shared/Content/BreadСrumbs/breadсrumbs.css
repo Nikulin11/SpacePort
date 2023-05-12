@@ -1,0 +1,37 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.breadCrumbs {
+    padding: 15px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.separator {
+    margin: 0 6px;
+}
+
+.link:hover span, .link:hover path {
+    transition: 0.3s;
+    color: var(--orange);
+    stroke: var(--orange);
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+}
+
+.languages > span {
+    margin-right: 21px;
+}
+
+@media all and (max-width: 649px) {
+    .languages > span {
+        display: none;
+    }
+}

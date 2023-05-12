@@ -1,0 +1,16 @@
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: absolute;
+    top: 10px;
+}
+
+@media all and (max-width: 759px) {
+  .menu {
+    display: none;
+  }
+}

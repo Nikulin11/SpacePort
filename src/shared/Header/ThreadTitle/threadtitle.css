@@ -1,0 +1,4 @@
+.company:hover span {
+  color: var(--orange);
+  transition: 0.3s;
+}

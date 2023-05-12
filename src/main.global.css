@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+
+:root {
+  --black3A:        #3A3A3A;
+  --orange:         #ED7117;
+  --white:          #ffffff;
+  --gray93:         #939393;
+  --gray90:         #909090;
+  --gray83:         #838383;
+  --gray9C:         #9C9C9C;
+  --grayF8:         #F8F8F8;
+  --grayDF:         #DFDFE1;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--white);
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+* {
+  color: var(--black3A);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.select__control {
+  cursor: pointer !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.select__control--menu-is-open .select__indicator {
+  transition: 0.3s;
+  rotate: 180deg;
+}
+
+.select__value-container {
+  padding: 0 !important;
+}
+
+.select__single-value {
+  color: var(--black3A) !important;
+  margin: 0 !important;
+  display: flex;
+  line-height: 21px;
+}
+
+.select__single-value > span {
+  border-bottom: 1px dashed var(--black3A);
+}
+
+.select__single-value img {
+  margin-right: 10px;
+}
+
+.select__indicator-separator {
+  display: none;
+}
+
+.select__menu {
+  margin: 0 !important;
+  right: 0 !important;
+  width: fit-content !important;
+  padding: 25px;
+  box-shadow: 0px 4px 15px rgba(77, 77, 77, 0.15) !important;
+  border-radius: 8px !important;
+  border: none !important;
+}
+
+.select__option {
+  cursor: pointer !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  display: flex !important;
+}
+
+.select__menu-list {
+  overflow-y: visible !important;
+}
+
+.select__menu-list .select__option:not(:last-child) {
+  padding-bottom: 8px !important;
+}
+
+.select__option img {
+  margin-right: 10px;
+}
+
+.select__option:hover {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.select__option:hover span {
+  transition: 0.3s;
+  color: var(--orange);
+}
+
+.select__option:hover img {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.select__option--is-focused {
+  background-color: rgba(255, 255, 255, 0) !important;
+}

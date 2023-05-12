@@ -1,0 +1,51 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.offer {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.text {
+    margin-top: 19px;
+}
+
+.buttonBlock {
+    margin-top: 19px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    margin-top: 40px;
+}
+
+@media all and (max-width: 799px) {
+    .banner {
+        margin-top: 25px;
+    }
+    .banner img {
+        width: 100%;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .buttonBlock {
+        order: 1;
+    }
+    .buttonBlock button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .offer {
+        padding-bottom: 50px;
+    }
+    .text {
+        margin-top: 25px;
+    }
+}

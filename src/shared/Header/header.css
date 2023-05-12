@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.headerInner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+@media all and (max-width: 759px) {
+  .headerInner {
+      flex-direction: column;
+  }
+}

@@ -1,0 +1,20 @@
+import React from 'react';
+import styles from './icon.css'
+
+interface IFlagOfRussiaIconProps {
+  size: number;
+}
+
+export function FlagOfRussiaIcon({size}: IFlagOfRussiaIconProps) {
+  return (
+    <svg className={styles[size]} width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+      <rect x="0.1" y="0.1" width="23.8" height="15.8" fill="url(#pattern0)" stroke="#3A3A3A" strokeWidth="0.2"/>
+      <defs>
+      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+      <use xlinkHref="#image0_2_187" transform="matrix(0.00364299 0 0 0.00546448 -0.000910747 0)"/>
+      </pattern>
+      <image id="image0_2_187" width="275" height="183" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAElBMVEX////CNykGG3kAAGwAGH7LOR9TMMkKAAAA9UlEQVR4nO3QsQGAQAwAoejr/ivb50pbGIEZAAAAAAAAAAAAAAAAAAAAAH47bHOzOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJzUP27xsc7E5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aQ+2jLMGymKnQ8AAAAASUVORK5CYII="/>
+      </defs>
+    </svg>
+  );
+}
